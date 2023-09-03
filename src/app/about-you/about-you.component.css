@@ -1,0 +1,25 @@
+.input input{
+    font-size: 18px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #4444;
+    padding: 8px;
+}
+.input select{
+    font-size: 18px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #4444;
+    padding: 8px;
+}
+.input label{
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.Material{
+    font-size: 18px;
+    padding: 8px;
+
+}

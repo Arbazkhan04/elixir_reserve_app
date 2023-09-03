@@ -1,0 +1,10 @@
+ ul {margin:0px;padding:0px}
+  ul li
+{
+  text-align: left;
+  list-style:none
+}
+.custom-list {
+    padding-left: 1.5rem; /* Add space for the bullets */
+}
+

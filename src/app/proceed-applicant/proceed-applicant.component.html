@@ -1,0 +1,86 @@
+<main>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="box-one py-2 px-2">
+          <p class="sanjna">Amit Gupta</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fs-6 box-one"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Upload KYC Documents
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  It is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element.
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-success fs-5">Extraction Complete</p>
+        </div>
+        <div class="box-one py-2 px-2 mt-4">
+          <p class="sanjna">Sanjna Gupta</p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fs-6 box-one"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Upload KYC Documents
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  It is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element.
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-success fs-5">Extraction Complete</p>
+        </div>
+      </div>
+      <div class="doc-stamp">
+        <img
+          src="/assets/WhatsApp Image 2023-09-03 at 20.32.45.jpeg"
+          class="img-fluid"
+          alt=""
+        />
+        <p>
+          Your Documents have been Processed successfully! <br />Kindly review
+          your details on the next page
+        </p>
+        
+      </div>
+      
+        <button class="my-3 btn btn-primary w-100" (click)="goToVerify()">Continue</button>
+        <h3 class="my-1 text-center text-primary" (click)="goToBack()">Back</h3>
+
+    </div>
+  </div>
+</main>
