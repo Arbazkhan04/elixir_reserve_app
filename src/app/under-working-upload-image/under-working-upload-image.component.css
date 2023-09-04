@@ -1,0 +1,65 @@
+      /* Styling for the image container */
+      .image-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Styling for the image */
+    .image-container img {
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+
+    /* Styling for the black overlay */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+    }
+
+    /* Styling for the white text */
+    .text {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Styling for the clear box */
+    .clear-box {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 60%;
+        height: 50%;
+        border: 2px solid rgb(255, 255, 255); /* Example border for the clear box */
+        border-radius: 20px;
+      }
+      .b-row {
+        width: 290px;
+        margin-top: 40px;
+display: flex;
+justify-content: space-between;
+}
+.un-box {
+max-width: 400px;
+position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+        text-align: center;
+}
+.circle svg{
+border: 4px solid grey;
+border-radius: 50%;
+}

@@ -18,6 +18,8 @@ import { UnderWorkingUploadImageComponent } from './under-working-upload-image/u
 import { SigningOrderComponent } from './signing-order/signing-order.component';
 import { FinishComponent } from './finish/finish.component';
 import { ManualSigningComponent } from './manual-signing/manual-signing.component';
+import { UploadDocmnetBackComponent } from './upload-docmnet-back/upload-docmnet-back.component';
+import { UploadDocmnetFrontComponent } from './upload-docmnet-front/upload-docmnet-front.component';
 
 
 export const routes: Routes = [
@@ -100,6 +102,16 @@ export const routes: Routes = [
   {
   path:'terms-condition',
   component:TermsConditionComponent
+  },
+
+  {
+    path:'upload-document-back',
+    component:UploadDocmnetBackComponent
+  },
+
+  {
+    path:'upload-document-front',
+    component:UploadDocmnetFrontComponent
   },
 
   {

@@ -16,6 +16,6 @@ export class JointApplicantDetailComponent {
 
   navigateToAnnexure()
   {
-    this.route.navigate(['annexure'])
+    this.route.navigate(['upload-document-front'])
   }
 }
