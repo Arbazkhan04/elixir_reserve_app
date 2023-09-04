@@ -1,0 +1,19 @@
+span.inner-bx {
+    margin-top: -9px;
+float: right;
+background: #eef0fc;
+width: 100px;
+
+}
+span.inner-bx {
+float: right;
+background: #eef0fc;
+width: 150px;
+border-radius: 10px;
+padding: 8px;
+}
+.sign-b-1 {
+padding: 16px;
+border-radius: 10px;
+border: 1px solid #4444;
+}

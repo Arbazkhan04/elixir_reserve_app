@@ -1,0 +1,42 @@
+.btn-1{
+    width: 300px;
+}
+.form-check-input {
+    float: revert !important;
+}
+.form-check {
+    text-align: center;
+}
+.btn-3 {
+    width: 300px;
+    text-align: start;
+}
+.btn-3 span {
+float: right;
+font-size: 18px;
+background: #fff;
+color: #0d6efd;
+height: 20px;
+width: 20px;
+border-radius: 20px;
+text-align: center;
+}
+.btn-4 {
+    width: 300px;
+    text-align: start;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}
+.btn-4 span {
+float: right;
+font-size: 18px;
+background: #0d6efd;
+color: #fff;
+height: 20px;
+width: 20px;
+border-radius: 20px;
+text-align: center;
+}
+.btn-g-2{
+margin-top: 400px;
+}

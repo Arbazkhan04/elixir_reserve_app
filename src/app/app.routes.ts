@@ -14,6 +14,10 @@ import { VerifyBookinAmountComponent } from './verify-bookin-amount/verify-booki
 import { AboutYouComponent } from './about-you/about-you.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { DeclarationSubmitComponent } from './declaration-submit/declaration-submit.component';
+import { UnderWorkingUploadImageComponent } from './under-working-upload-image/under-working-upload-image.component';
+import { SigningOrderComponent } from './signing-order/signing-order.component';
+import { FinishComponent } from './finish/finish.component';
+import { ManualSigningComponent } from './manual-signing/manual-signing.component';
 
 
 export const routes: Routes = [
@@ -38,9 +42,14 @@ export const routes: Routes = [
    component:UploadSplashScreenComponent
   },
   
+  // {
+  //   path:'upload-image',
+  //   component:UploadImageComponent
+  // },
+
   {
     path:'upload-image',
-    component:UploadImageComponent
+    component:UnderWorkingUploadImageComponent
   },
 
   {
@@ -96,6 +105,21 @@ export const routes: Routes = [
   {
     path:'decalaration-submit',
     component:DeclarationSubmitComponent
+  },
+
+  {
+    path:'signing-order',
+    component:SigningOrderComponent
+  },
+
+  {
+    path:'manual-signing',
+    component:ManualSigningComponent
+  },
+
+  {
+    path:'finish',
+    component:FinishComponent
   }
     
 ];

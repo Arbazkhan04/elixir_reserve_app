@@ -1,3 +1,22 @@
-
-<p>working.....</p>
-<button class="btn btn-primary" (click)="navigateToNext()"> go to next</button>
+<div *ngIf="showCamera">
+    <webcam
+    [height]="webcamHeight"
+    [width]="webcamWidth"
+    [trigger]="triggerObservable"
+    (imageCapture)="handleImageCapture($event)"
+  ></webcam>
+  
+  
+    <!-- Rectangle for Face -->
+    <div class="face-rectangle"></div>
+  
+    <!-- Capture Button -->
+    <button (click)="captureImage()" class="capture-button">Capture</button>
+  </div>
+  
+  <div *ngIf="capturedImage">
+    <h4>Captured Image Preview:</h4>
+    <img [src]="capturedImage.imageAsDataUrl" alt="Captured Image">
+    <!-- <button (click)="compressAndUpload()" class="upload-button">Upload Image</button> -->
+  </div>
+  

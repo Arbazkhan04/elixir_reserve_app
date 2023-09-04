@@ -1,20 +1,34 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-center align-items-center">
-                  <div class="form-check">
-                    <input class="form-check-input text-bold" type="checkbox" value="" id="flexCheckDefault">
-                     <button class="btn btn-primary w-40">Current Form</button>
+   <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center fs-4 fw-bold">Declaration & Submit</p>
+            <div class="btn-g">
+                <div class="form-check">
+                    <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <button class="btn btn-primary btn-1">Consert Form</button>
+                    </label>
                   </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input text-bold" type="checkbox" value="" id="flexCheckDefault">
-                     <button class="btn btn-primary w-40 bg-none">Current Form</button>
+                  <div class="form-check mt-3">
+                    <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckChecked" >
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <button class="btn btn-light btn-1 ">Quotation</button>
+                    </label>
                   </div>
             </div>
+            <!-- buttons group two -->
+            <div class="btn-g-2">
+                <div class="form-check">
+                    <button class="btn btn-primary btn-3" (click)="naviageTosigningorder()">E-Sign & Submit <span class="i">i</span></button>
+                    
+                  </div>
+                  <div class="form-check mt-3">
+                    <button class="btn btn-light btn-4" (click)="navigateToManualSigning()">Manual Sign & Submit <span class="i">i</span></button>
+                    
+                  </div>    
+            </div>
+            <button class="w-100 btn btn-light text-primary mt-1">Back</button>
+            </div>
+            
         </div>
     </div>
-    <h1>working..............</h1>
-
-    <button class="my-3 btn btn-primary"></button>
-</div>

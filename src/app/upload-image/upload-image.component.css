@@ -1,0 +1,31 @@
+/* capture.component.css */
+.face-rectangle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 250px;
+    border: 2px solid red; /* Adjust the border style as needed */
+    z-index: 1;
+  }
+  
+  .capture-button {
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust the button style as needed */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upload-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust the button style as needed */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

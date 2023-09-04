@@ -17,6 +17,15 @@ export class AnnexureComponent {
 
   }
 
+
+  navigareToJoinedApplicant()
+  {
+
+  }
+
+  goToBack()
+  {}
+
   navigateToBookingAmount()
   {
     this.route.navigate(['upload-booking-amount'])

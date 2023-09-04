@@ -1,0 +1,19 @@
+.bg-img{
+    height: 100vh;
+    /* background-image: url('/assets/gifimg.gif'); */
+}
+.congs-txt{
+    color: #252f6b;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+.f-txt{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+.margin-t{
+    margin-top: 65vh;
+}
