@@ -1,4 +1,4 @@
-<br/><br/><br/><br/>
+<!-- <br/><br/><br/><br/>
 <canvas #sigPad width="300" height="150" (mousedown)="onMouseDown($event)"
 (mousemove)="onMouseMove($event)"></canvas>
 <br/>
@@ -7,4 +7,68 @@
 <br/>
 <img [src]="img">
 <br/>
-<span>{{img}}</span>
+<span>{{img}}</span> -->
+
+
+
+
+<div class="container mt-2 ">
+    <div class="fs-5 my-5 text-center">
+        Add Your Signature
+    </div>
+    <ul class="nav nav-tabs mb-5" id="myTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="amit-tab" data-toggle="tab" href="#amit" role="tab" aria-controls="amit" aria-selected="true">Amit Gupta</a>
+        </li>
+        <li class="nav-item ms-5" role="presentation">
+            <a class="nav-link" id="sanjana-tab" data-toggle="tab" href="#sanjana" role="tab" aria-controls="sanjana" aria-selected="false">Sanjana Gupta</a>
+        </li>
+    </ul>
+    
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="amit" role="tabpanel" aria-labelledby="amit-tab">
+            <!-- <h2>Amit's Section</h2> -->
+            <div class="signature-board">
+                <canvas id="signatureCanvas" #sigPad width="300" height="150" (mousedown)="onMouseDown($event)"
+                (mousemove)="onMouseMove($event)"></canvas>
+                <button id="clearSignature" class="btn btn-danger mt-2" (click)="clear()">Clear </button>
+            </div>
+    
+            <div class="typing-area">
+                <textarea class="form-control mt-3" rows="5" placeholder="Type here..."></textarea>
+            </div>
+    
+            <div class="file-upload">
+                <input type="file" class="form-control-file mt-3" id="fileInput">
+            </div>
+        </div>
+        <div class="tab-pane fade" id="sanjana" role="tabpanel" aria-labelledby="sanjana-tab">
+            <!-- <h2>Sanjana's Section</h2> -->
+            <div class="signature-board">
+                <canvas id="signatureCanvasSanjana" width="360" height="200"></canvas>
+                <button id="clearSignatureSanjana" class="btn btn-danger mt-2">Clear</button>
+            </div>
+    
+            <div class="typing-area">
+                <textarea class="form-control mt-3" rows="5" placeholder="Type here..."></textarea>
+            </div>
+    
+            <div class="file-upload">
+                <input type="file" class="form-control-file mt-3" id="fileInputSanjana">
+            </div>
+        </div>
+    </div>
+    
+    <div class="btn-group mt-3">
+        <i class="fas fa-pen active-icon" id="signatureIcon"></i>
+        <i class="fas fa-keyboard" id="typingIcon"></i>
+        <i class="fas fa-file" id="fileIcon"></i>
+        <i class="fas fa-undo" id="resetIcon"></i>
+    </div>
+
+    <div class="mx-2 mt-5">
+        <button class="btn btn-primary text-white w-100">Submit</button>
+        <button class="btn btn-light text-primary w-100 mt-4">Back</button>
+
+    </div>
+</div>

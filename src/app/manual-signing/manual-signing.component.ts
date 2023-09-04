@@ -19,7 +19,7 @@ export class ManualSigningComponent {
   ngAfterViewInit() {
     this.sigPadElement = this.sigPad.nativeElement;
     this.context = this.sigPadElement.getContext('2d')!;
-    this.context.strokeStyle = '#3742fa';
+    this.context.strokeStyle = '#000000';
   }
 
   @HostListener('document:mouseup', ['$event'])
