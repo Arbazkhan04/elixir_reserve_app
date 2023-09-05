@@ -1,0 +1,20 @@
+.box-one{
+    border-radius: 10px;
+    background-color: #eef0fc;
+  }
+  .accordion-item{
+    border: none;
+  }
+  .accordion-button{
+    padding: 0px
+  }
+  .sanjna{
+    font-size: 18px;
+  } 
+  .doc-stamp{
+      text-align: center;
+  }
+  .doc-stamp img{
+      height: 300px;
+      width: 300px;
+  }

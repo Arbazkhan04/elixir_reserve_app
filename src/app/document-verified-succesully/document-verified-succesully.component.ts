@@ -4,23 +4,23 @@ import { Router } from '@angular/router';
 import { CommonButtonsComponent } from '../shared/common-buttons/common-buttons.component';
 
 @Component({
-  selector: 'app-priamry-applicant',
+  selector: 'app-document-verified-succesully',
   standalone: true,
   imports: [CommonModule,CommonButtonsComponent],
-  templateUrl: './priamry-applicant.component.html',
-  styleUrls: ['./priamry-applicant.component.css']
+  templateUrl: './document-verified-succesully.component.html',
+  styleUrls: ['./document-verified-succesully.component.css']
 })
-export class PriamryApplicantComponent {
+export class DocumentVerifiedSuccesullyComponent {
 
-  constructor(private route:Router,private location:Location){}
+  constructor(private route:Router,private locaion:Location)  {}
 
   goToVerify()
   {
-   this.route.navigate(['uplaod-image-verify'])
+    this.route.navigate(['applicant-detail'])
   }
 
   goToBack()
   {
-    this.location.back();
+    this.locaion.back();
   }
 }

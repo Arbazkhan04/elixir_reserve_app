@@ -1,20 +1,22 @@
+.accordion-item{
+  border: none;
+}
+.accordion-button{
+  padding: 0px
+}
+.sanjna{
+  font-size: 18px;
+}
 .box-one{
-    border-radius: 10px;
-    background-color: #eef0fc;
-  }
-  .accordion-item{
-    border: none;
-  }
-  .accordion-button{
-    padding: 0px
-  }
-  .sanjna{
-    font-size: 18px;
-  } 
-  .doc-stamp{
-      text-align: center;
-  }
-  .doc-stamp img{
-      height: 300px;
-      width: 300px;
-  }
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.box-two button{
+  float: right;
+  margin-top: 20px;
+}
+.box-two{
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}

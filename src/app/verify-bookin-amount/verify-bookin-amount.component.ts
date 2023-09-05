@@ -16,6 +16,6 @@ export class VerifyBookinAmountComponent {
 
   navigateToAllAboutYou()
   {
-    this.route.navigate(['all-about-you'])
+    this.route.navigate(['second-about-you'])
   }
 }

@@ -20,6 +20,14 @@ import { FinishComponent } from './finish/finish.component';
 import { ManualSigningComponent } from './manual-signing/manual-signing.component';
 import { UploadDocmnetBackComponent } from './upload-docmnet-back/upload-docmnet-back.component';
 import { UploadDocmnetFrontComponent } from './upload-docmnet-front/upload-docmnet-front.component';
+import { SecondApplicantAmitComponent } from './second-applicant-amit/second-applicant-amit.component';
+import { UploadJoined1DetailComponent } from './upload-joined1-detail/upload-joined1-detail.component';
+import { UploadImageVerfiy1DocumentComponent } from './upload-image-verfiy1-document/upload-image-verfiy1-document.component';
+import { SecondApplicantPanAdharUploadComponent } from './second-applicant-pan-adhar-upload/second-applicant-pan-adhar-upload.component';
+import { SecondApplicantUploadVerifyComponent } from './second-applicant-upload-verify/second-applicant-upload-verify.component';
+import { DocumentVerifiedSuccesullyComponent } from './document-verified-succesully/document-verified-succesully.component';
+import { JoinedApplicant1DetailsComponent } from './joined-applicant1-details/joined-applicant1-details.component';
+import { SecondAboutYouComponent } from './second-about-you/second-about-you.component';
 
 
 export const routes: Routes = [
@@ -55,18 +63,28 @@ export const routes: Routes = [
   },
 
   {
-    path:'primary-applicant',
-    component:PriamryApplicantComponent
+    path:'upload-joined-1-details',
+    component:UploadJoined1DetailComponent
   },
 
   {
-    path:'uplaod-image-verify',
-    component:UploadPrimaryVerifyComponent
+    path:'uplaod-image-verify-1-doc',
+    component:UploadImageVerfiy1DocumentComponent
   },
 
   {
     path:'proceed',
     component:ProceedApplicantComponent
+  },
+
+  {
+    path:'joined-applicant-1-details',
+    component:JoinedApplicant1DetailsComponent
+  },
+  
+  {
+    path:'second-applicant-upload-verify',
+    component:SecondApplicantUploadVerifyComponent
   },
 
   {
@@ -90,6 +108,11 @@ export const routes: Routes = [
   },
 
   {
+    path:'document-verifed-successfully',
+    component:DocumentVerifiedSuccesullyComponent
+  },
+
+  {
     path:'verified-booing-amount',
     component:VerifyBookinAmountComponent
   },
@@ -100,8 +123,18 @@ export const routes: Routes = [
   },
 
   {
+    path:'second-about-you',
+    component:SecondAboutYouComponent
+  },
+
+  {
   path:'terms-condition',
   component:TermsConditionComponent
+  },
+
+  {
+    path:'second-applicant-upload-front',
+    component:SecondApplicantAmitComponent
   },
 
   {
@@ -112,6 +145,11 @@ export const routes: Routes = [
   {
     path:'upload-document-front',
     component:UploadDocmnetFrontComponent
+  },
+
+  {
+    path:'second-applicant-upload-details',
+    component:SecondApplicantPanAdharUploadComponent
   },
 
   {

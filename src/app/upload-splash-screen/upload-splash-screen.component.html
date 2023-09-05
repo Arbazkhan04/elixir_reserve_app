@@ -17,8 +17,11 @@
             </div>
         </div>
 
-        <button class="btn btn-primary w-100 my-3" (click)="navigateToImageUpload()">Continue</button>
-        <h3 class="text-center text-primary my-2" (click)="goToBack()">Back</h3>
+
+        <app-common-buttons
+        (continueClick)="navigateToImageUpload()"
+        (backClick)="goToBack()"
+        ></app-common-buttons>
 
     </div>
   </main>

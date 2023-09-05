@@ -16,7 +16,7 @@ export class PrimaryApplicantDetailsComponent {
 
   navigareToJoinedApplicant()
   {
-    this.route.navigate(['joined-applicant'])
+    this.route.navigate(['joined-applicant-1-details'])
   }
 
   goToBack()

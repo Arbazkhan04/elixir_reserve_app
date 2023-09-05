@@ -16,6 +16,6 @@ export class AboutYouComponent {
 
   navigateToTermsCondition()
   {
-    this.route.navigate(['terms-condition'])
+    this.route.navigate(['annexure'])
   }
 }

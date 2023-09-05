@@ -76,7 +76,7 @@ export class UploadImageComponent {
   }
 
   navigateToNext() {
-    this.route.navigate(['primary-applicant']);
+    this.route.navigate(['upload-joined-1-details']);
   }
 
   public get triggerObservable(): Observable<void> {
