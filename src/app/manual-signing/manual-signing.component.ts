@@ -1,10 +1,12 @@
-import { Component, ElementRef, HostListener, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { CommonModule, Location } from '@angular/common';
+import { Router } from '@angular/router';
+import { CommonButtonsComponent } from '../shared/common-buttons/common-buttons.component';
 
 @Component({
   selector: 'app-manual-signing',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,CommonButtonsComponent],
   templateUrl: './manual-signing.component.html',
   styleUrls: ['./manual-signing.component.css']
 })
@@ -15,6 +17,20 @@ export class ManualSigningComponent {
   isDrawing = false;
   img!: string;
   shouldShow = true; 
+
+
+  constructor(private route:Router,private location:Location)
+  {}
+
+  navigateToNext()
+  {
+    this.route.navigate(['finish'])
+  }
+
+  goToBack()
+  {
+    this.location.back();
+  }
 
   ngAfterViewInit() {
     this.sigPadElement = this.sigPad.nativeElement;
@@ -35,6 +51,7 @@ export class ManualSigningComponent {
 
   onMouseMove(e:any) {
     if (this.isDrawing) {
+
       const coords = this.relativeCoords(e);
       this.context.lineTo(coords.x, coords.y);
       this.context.stroke();

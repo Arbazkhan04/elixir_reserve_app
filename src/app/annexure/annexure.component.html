@@ -60,9 +60,10 @@
             </div>
           </div>
          
-        <button type="submit" class="btn btn-primary w-100 mt-3" (click)="navigateToBookingAmount()">Submit</button>
+        <app-common-buttons
+        (continueClick)="navigateToBookingAmount()"
+        (backClick)="goToBack()">
+      </app-common-buttons>
 
-        <button type="submit" class="btn btn-outline-none w-100 text-primary" (click)="goToBack()">Back</button>
-        
     </div>
 </div>

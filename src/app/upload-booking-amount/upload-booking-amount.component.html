@@ -72,6 +72,13 @@
         
     </div>
     <button class="btn btn-outline-primary w-100 my-3">Add Another Payement Serivce</button>
-    <button class="btn btn-primary w-100 my-3" (click)="navigateToVerfiyBooking()">Continue</button>
-    <h3 class="text-center text-primary  my-1">Back</h3>
+    <!-- <button class="btn btn-primary w-100 my-3" (click)="navigateToVerfiyBooking()">Continue</button>
+    <h3 class="text-center text-primary  my-1">Back</h3> -->
+
+
+    <app-common-buttons
+    (continueClick)="navigateToVerfiyBooking()"
+    (backClick)="goToBack()">
+  </app-common-buttons>
+
 </div>

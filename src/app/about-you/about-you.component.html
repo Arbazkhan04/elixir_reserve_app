@@ -90,9 +90,10 @@
             </div>
         </div>
 
-    </div>
+    </div>    
+    <app-common-buttons
+    (continueClick)="navigateToTermsCondition()"
+    (backClick)="goToBack()">
+  </app-common-buttons>
 
-    <button class="btn btn-primary w-100 my-3" (click)="navigateToTermsCondition()">Continue</button>
-    <h3 class="text-center text-primary my-1">Back</h3>
-    
 </div> 
